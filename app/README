@@ -1,0 +1,23 @@
+# 環境構築
+
+## 初回起動
+```
+docker-compose build 
+docker-compose up
+```
+
+## DATABASE migrate
+```
+dockerサービスを立ち上げた状態で別ターミナルで実行
+docker-compose exec api python -m migrate_db 
+```
+
+## APIデモ方法
++ docker composeが立ち上がった状態で http://localhost:8080/docs#/default/create_registration_registration_post にアクセス
++ Post/ registrationの右横にある鍵マークをクリック
++ 認証画面が開くので以下を入力
+    * username: testuser
+    * password: password
+* Authoizeをクリック
+* ユーザ認証が成功しtokenが発行されます
+* Try it outをクリックするとregistrationAPIのリクエストテストができます
