@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+databases
+databases[aiomysql]
+pymysql
+python-multipart
+python-jose
+passlib[bcrypt]
+black
