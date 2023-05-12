@@ -9,7 +9,3 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    commit-message:
-      prefix: "pip"
-    labels:
-      - "pip dependencies"
